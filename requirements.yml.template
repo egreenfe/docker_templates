@@ -1,0 +1,11 @@
+- src: https://github.com/egreenfe/ansible-role-java.git
+  version: master
+  name: ansible-role-java
+
+- src: https://github.com/egreenfe/ansible-role-repoepel.git
+  version: master
+  name: ansible-role-repoepel
+
+- src: https://github.com/egreenfe/ansible-role-javaapiserver.git
+  version: master
+  name: ansible-role-javaapiserver

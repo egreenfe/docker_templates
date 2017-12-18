@@ -1,0 +1,17 @@
+version: "3"
+services:
+  apiserver:
+    image: samplenodeproj-apiserver
+    expose:
+      - "5000"
+    logging:
+      driver: splunk
+      options:
+        splunk-url: https://localhost:8088
+        splunk-token: 3ebc0195-400e-415b-ad2b-9d22f45dba2d
+        splunk-insecureskipverify: 'true'
+        splunk-format: json
+        tag: "{{.Name}}: {{.ID}}"
+    environment:
+      - VIRTUAL_HOST=apiserver.frbtest.com
+
